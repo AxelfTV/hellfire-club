@@ -4,10 +4,20 @@ let darkMode;
 
 function main()
 {
-    if(window.localStorage.getItem("dark-mode") == null) window.localStorage.setItem("dark-mode", false);
+    if(window.localStorage.getItem("dark-mode") == null) window.localStorage.setItem("dark-mode", 0);
     darkMode = window.localStorage.getItem("dark-mode");
-    console.log("init", darkMode);
-    if(darkMode == true) toggleDarkMode();
+    
+    if(darkMode == 1) 
+    {
+        console.log("init", darkMode);
+        
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        document.getElementById("light-header").classList.toggle("hidden");
+        document.getElementById("dark-header").classList.toggle("hidden");
+
+    }
+
 
     document.getElementsByClassName("dm-toggle")[0].addEventListener("click", toggleDarkMode);
     document.getElementsByClassName("dm-toggle")[1].addEventListener("click", toggleDarkMode);
@@ -21,7 +31,8 @@ function toggleDarkMode()
     document.getElementById("light-header").classList.toggle("hidden");
     document.getElementById("dark-header").classList.toggle("hidden");
 
-    darkMode = !darkMode;
+    if(darkMode == 1) darkMode = 0;
+    else darkMode = 1;
     window.localStorage.setItem("dark-mode", darkMode);
 
     console.log(window.localStorage.getItem("dark-mode"));
