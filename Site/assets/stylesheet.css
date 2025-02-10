@@ -31,6 +31,20 @@ body {
 .header-right {
     float: right;
   }
+.header-right .dm-toggle{
+    border: 0px !important;
+    padding: 12px !important;
+    font-size: 18px !important;
+    line-height: 25px !important;
+    border-radius: 4px !important;
+    font: inherit;
+    text-align: center;
+    cursor: pointer;
+    background: transparent;
+    color: black;
+
+    
+}
 .hidden{
     display: none;
 }
