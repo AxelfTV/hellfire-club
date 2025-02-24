@@ -15,7 +15,6 @@ body {
 /* Style the header with a grey background and some padding */
 .header {
     overflow: hidden;
-    background-color: #f1f1f1;
     padding: 20px 10px;
 }
   
@@ -32,9 +31,18 @@ body {
 }
 /* Float the link section to the right */
 .header-right {
-    float: right;
-  }
-.header-right .dm-toggle{
+    float: none;
+    position: absolute;
+    left: 40%;
+}
+
+.dm-toggle{
+position: fixed;
+top: 15px;
+right: 30px;
+
+}
+.header-right, .dm-toggle{
     border: 0px !important;
     padding: 12px !important;
     font-size: 18px !important;
@@ -45,8 +53,12 @@ body {
     cursor: pointer;
     background: transparent;
     color: black;
+}
 
-    
+hr{
+    margin-top: 40px;
+    margin-bottom: 0px;
+    border-top: 1px solid #000;
 }
 footer{
     margin-top: 25px;
