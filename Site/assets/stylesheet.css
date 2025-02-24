@@ -41,6 +41,7 @@ position: fixed;
 top: 15px;
 right: 30px;
 
+z-index: 10;
 }
 .header-right, .dm-toggle{
     border: 0px !important;
