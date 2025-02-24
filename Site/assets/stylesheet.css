@@ -63,19 +63,28 @@ div{
 #about-timeline{
     background-color: #506640;
     width:100%;
+    position: relative;
+}
+#about-timeline #about-wrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
     text-align: center;
 }
-#about-timeline div{
+#about-wrapper div{
     margin:10px;
 }
-#about-timeline p{
-    width: 90%;
-    
+#about-wrapper p{
+    width: 90%; 
 }
-#about-timeline img{
+#about-wrapper img{
     width: 90%;
-    
+}
+.vertical-line{
+    border-left: 4px solid #3C4F30;
+    height: 90%;
+    position:absolute;
+    left: 50%;
+    margin-left: -2px;
+    top: 5%;
 }
