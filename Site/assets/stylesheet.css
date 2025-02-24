@@ -1,8 +1,6 @@
 body {
     background-color: white;
     color: black;
-
-    margin: 25px; 
   }
   
   /*body class style*/
@@ -14,7 +12,6 @@ body {
 /* Style the header with a grey background and some padding */
 .header {
     overflow: hidden;
-    background-color: #f1f1f1;
     padding: 20px 10px;
 }
   
@@ -31,9 +28,18 @@ body {
 }
 /* Float the link section to the right */
 .header-right {
-    float: right;
-  }
-.header-right .dm-toggle{
+    float: none;
+    position: absolute;
+    left: 40%;
+}
+
+.dm-toggle{
+position: fixed;
+top: 15px;
+right: 30px;
+
+}
+.header-right, .dm-toggle{
     border: 0px !important;
     padding: 12px !important;
     font-size: 18px !important;
@@ -44,47 +50,13 @@ body {
     cursor: pointer;
     background: transparent;
     color: black;
+}
 
-    
+hr{
+    margin-top: 40px;
+    margin-bottom: 0px;
+    border-top: 1px solid #000;
 }
 .hidden{
     display: none;
-}
-
-div{
-    
-    border-radius: 25px;
-}
-/*Light mode about page*/
-#about-header-image img{
-    width: 100%;
-    margin-top: 25px;
-}
-#about-timeline{
-    background-color: #506640;
-    width:100%;
-    position: relative;
-}
-#about-timeline #about-wrapper{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    text-align: center;
-}
-#about-wrapper div{
-    margin:10px;
-}
-#about-wrapper p{
-    width: 90%; 
-}
-#about-wrapper img{
-    width: 90%;
-}
-.vertical-line{
-    border-left: 4px solid #3C4F30;
-    height: 90%;
-    position:absolute;
-    left: 50%;
-    margin-left: -2px;
-    top: 5%;
 }
