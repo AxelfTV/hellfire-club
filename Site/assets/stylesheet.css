@@ -1,6 +1,8 @@
 body {
     background-color: white;
     color: black;
+
+    margin: 25px; 
   }
   
   /*body class style*/
@@ -47,4 +49,33 @@ body {
 }
 .hidden{
     display: none;
+}
+
+div{
+    
+    border-radius: 25px;
+}
+/*Light mode about page*/
+#about-header-image img{
+    width: 100%;
+    margin-top: 25px;
+}
+#about-timeline{
+    background-color: #506640;
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    text-align: center;
+}
+#about-timeline div{
+    margin:10px;
+}
+#about-timeline p{
+    width: 90%;
+    
+}
+#about-timeline img{
+    width: 90%;
+    
 }
