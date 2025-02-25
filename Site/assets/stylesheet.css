@@ -107,3 +107,23 @@ div{
     margin-left: -2px;
     top: 5%;
 }
+/* gallery */
+.container{
+    width: 80%;
+    float: center;
+    margin: auto;
+    display: grid;
+    grid-gap: 20px;
+    padding: 20px;
+    border-radius: 5%;
+    background-color: #BDB77C;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container img{
+    width: 250px;
+    height: auto;
+    margin: 5px;
+}
