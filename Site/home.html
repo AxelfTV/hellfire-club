@@ -21,8 +21,43 @@
           <a href="about.html">About</a>
           <a href="gallery.html">Gallery</a>
           <!-- <button class="dm-toggle">Toggle</button> -->
-        </div>
+        </div>        
     </div>
+
+    <div class="image-banner">
+    </div>
+
+    <div class="intro-text">
+      <h2>Welcome to the Hellfire Club Website</h2>
+      <p>Discover the rich history, scenic trails, and haunting tales of 
+        Dublin’s iconic Hellfire Club. Our website offers information on 
+        hiking trails, historical insights, and ghostly legends. Tag us on 
+        Instagram to share your photos! Toggle to dark mode for some darker 
+        content!</p>
+  </div>
+
+    <div class="arrow" onclick="scrollToContent()">⬇</div>
+
+    <div id="content">
+      <div class="content-section">
+          <img src="assets/images/homepagePhoto.jpg" alt="示例图片">
+          <div class="text">Visitor information opening hours, accessibility etc.</div>
+      </div>
+      <div class="content-section">
+          <img src="assets/images/homepagePhoto.jpg" alt="示例图片">
+          <div class="text">History of the site, archaeologists say...</div>
+      </div>
+      <div class="content-section">
+          <img src="assets/images/homepagePhoto.jpg" alt="示例图片">
+          <div class="text">Check out the exciting hiking trails around the Hell Fire Club.</div>
+      </div>
+  </div>
+
+  <script>
+    function scrollToContent() {
+        document.getElementById('content').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
 
 
     <div id="dark-header" class="header hidden">

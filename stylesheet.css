@@ -70,7 +70,16 @@ div{
 }
 
 /*Light mode home page*/
-
+.image-banner { width: 100%; height: 300px; min-height: 300px; 
+     }
+.intro-text {padding: 40px;  width: 100%;text-align: center; width: 100%; max-width: 800px; font-size: 18px;  }
+.intro-text mTitle { text-align: center; width: 100%; max-width: 800px; font-size: 18px; }
+.intro-text content { text-align: center; width: 100%; max-width: 800px; font-size: 18px;  
+ }
+.arrow { text-align: center; font-size: 30px; padding: 20px; cursor: pointer; }
+.content-section { display: flex; align-items: center; padding: 40px; border-bottom: 1px solid #ddd; }
+.content-section img { width: 40%; height: auto; }
+.content-section .text { width: 60%; padding: 20px; font-size: 16px; }
 
 /*Light mode visit page*/
 
