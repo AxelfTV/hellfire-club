@@ -126,3 +126,32 @@ div{
     border: 3px solid rgb(31, 34, 53)}
 .content-section img { padding:0; width: 40%; height: auto; }
 .content-section .text { width: 60%; padding: 20px; font-size: 30px; }
+
+/*Visit page css*/
+#visit-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 200px;
+}
+#visit-wrapper div{
+    background-color: darkgray;
+    margin: 20px;
+}
+#visit-wrapper div p{
+    text-align: center;
+}
+#map{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+#map img{
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+}
+.visit-larger-box{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
