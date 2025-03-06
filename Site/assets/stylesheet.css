@@ -175,3 +175,66 @@ div{
     height: auto;
     margin: 5px;
 }
+
+/* para-about page css */
+.dark-mode section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0;
+}
+.dark-mode section h1 {
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    max-width: 1600px;
+    gap: 30px;
+    padding-bottom: 20px;
+}
+.content-wrapper img {
+    width: 48%;
+    max-width: none;
+    height: auto;
+    border-radius: 15px;
+}
+.text-box {
+    width: 45%;
+    max-width: none;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#para-about-satanic-rituals {
+    background-color: black;
+}
+
+#para-about-satanic-rituals .text-box {
+    background-color: #40100C;
+    color: white;
+}
+
+#para-about-ghost-stories {
+    background-color: #40100C;
+}
+
+#para-about-ghost-stories .text-box {
+    background-color: black;
+    color: white;
+}
+
+#para-about-paranormal-sightings {
+    background-color: black;
+}
+
+#para-about-paranormal-sightings .text-box {
+    background-color: #40100C;
+    color: white;
+}
