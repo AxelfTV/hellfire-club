@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hellfire Club - Home</title>
+
+    <link rel="stylesheet" href="assets/stylesheet.css">
+    <script src="assets/scripts/particles.js"></script>
+    <script src="assets/scripts/darkmode.js"></script>
+
+</head>
+<body class="dark-body" >
+    <div id="particles-js1"></div>
+    <canvas id="fireCanvas"></canvas>
+    <canvas id="fireCanvas2"></canvas>
+    <div id="dark-header" class="header">
+        <!-- <a href="home.html" class="logo">Hellfire Club Logo</a> -->
+        <button class="dm-toggle" style="color: white;">Toggle</button>
+        <a href="home.html " ><img src="assets/images/HellfireDarkModeLogo.png" alt=""></a>
+        <hr>
+        <div class="header-right">   
+         
+          <a class="active" href="home.html" style="color: white;">Home</a>
+          <a href="visit.html" style="color: white;">Visit</a>
+          <a href="about.html" style="color: white;">About</a>
+          <a href="gallery.html" style="color: white;">Gallery</a>
+          <!-- <button class="dm-toggle">Toggle</button> -->
+        </div>        
+    </div>
+    <div id="dark-header" class="header hidden">
+        <!-- <a href="home.html" class="logo">Hellfire Club Logo</a> -->
+        <button class="dm-toggle">Toggle</button>
+        <a href="home.html "><img src="assets/images/HellfireDarkModeLogo.png" alt="Hellfire Club Logo"></a>
+        <hr>
+        <div class="header-right">   
+         
+          <a class="active" href="home.html">Home</a>
+          <a href="para-visit.html">Visit</a>
+          <a href="para-about.html">About</a>
+          <a href="para-gallery.html">Gallery</a>
+          <!-- <button class="dm-toggle">Toggle</button> -->
+        </div>        
+    </div>
+
+    <div class="image-banner">
+    </div>
+
+   <!--   <div id="particles-js1"></div> -->
+    <div class="intro-text">
+      <h2>Welcome to the Hellfire Club Website</h2>
+      <p>Discover the rich history, scenic trails, and haunting tales of 
+        Dublin’s iconic Hellfire Club. Our website offers information on 
+        hiking trails, historical insights, and ghostly legends. Tag us on 
+        Instagram to share your photos! Toggle to dark mode for some darker 
+        content!</p>
+  </div>
+
+    <div class="arrow" onclick="scrollToContent()">⬇</div>
+
+    <div id="content">
+      <div class="content-section" id="para-content-section">
+          <img src="assets/images/homepagePhoto.jpg" alt="">
+          <div class="text">Visitor information opening hours, accessibility etc.</div>
+      </div>
+      <div class="content-section" id="para-content-section">
+          <img src="assets/images/homepagePhoto.jpg" alt="">
+          <div class="text">History of the site, archaeologists say...</div>
+      </div>
+      <div class="content-section" id="para-content-section">
+          <img src="assets/images/homepagePhoto.jpg" alt="">
+          <div class="text">Check out the exciting hiking trails around the Hell Fire Club.</div>
+      </div>
+  </div>
+
+  <script>
+    function scrollToContent() {
+        document.getElementById('content').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+
+    <div id="dark-header" class="header hidden">
+        <a href="home.html" class="logo">Hellfire Club Logo</a>
+        <div class="header-right">
+          <a class="active" href="home.html">Home</a>
+          <a href="para-visit.html">Visit</a>
+          <a href="para-about.html">About</a>
+          <a href="para-gallery.html">Gallery</a>
+          <button class="dm-toggle">Toggle</button>
+        </div>
+    </div>
+
+    Home
+   
+</body>
+</html>

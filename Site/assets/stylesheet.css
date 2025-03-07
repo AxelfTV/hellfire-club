@@ -4,7 +4,13 @@ body {
 
     margin: 0px;
   }
+.dark-body
+{
+    background-color: #702727;
+    color: rgb(255, 255, 255);
 
+    margin: 0px;
+}
   
   /*body class style*/
 .dark-mode {
@@ -17,6 +23,14 @@ body {
     overflow: hidden;
     padding: 20px 10px;
     background-color: #78864B;
+    border-radius: 0%;
+}
+#dark-header
+{
+    color: white;
+    overflow: hidden;
+    padding: 20px 10px;
+    background-color: #000000;
     border-radius: 0%;
 }
   
@@ -126,6 +140,54 @@ div{
     border: 3px solid rgb(31, 34, 53)}
 .content-section img { padding:0; width: 40%; height: auto; }
 .content-section .text { width: 60%; padding: 20px; font-size: 30px; }
+/*DarkMode Home Page*/
+#para-content-section { display: flex; align-items: center;
+    background: #ff5f5f; 
+    border-radius: 0; 
+    margin: 35px;
+    border: 3px solid rgb(31, 34, 53);
+    color: white;
+}
+/*particle*/
+#particles-js1 {
+    position: fixed;  /* 固定在背景 */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* 确保它在所有内容的下方 */
+}
+    
+/*flame*/
+#fireCanvas
+{
+    position: fixed;
+    mix-blend-mode: lighten; 
+    bottom: -100px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 150%; 
+
+    max-height: 500px;
+    min-width: 1400px;
+    min-height: 300px;
+    z-index: 100;
+}
+#fireCanvas2
+{
+    position: fixed;
+    mix-blend-mode: hard-light; 
+    bottom: -100px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 150%; 
+
+    max-height: 500px;
+    min-width: 1400px;
+    min-height: 300px;
+    z-index: 100;
+}
+
 
 /*Visit page css*/
 #visit-wrapper{
