@@ -19,19 +19,7 @@ catch
 
 }
 
-function toggleDarkMode() 
-{
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-    document.getElementById("light-header").classList.toggle("hidden");
-    document.getElementById("dark-header").classList.toggle("hidden");
 
-    if(darkMode == 1) darkMode = 0;
-    else darkMode = 1;
-    window.localStorage.setItem("dark-mode", darkMode);
-
-    console.log(window.localStorage.getItem("dark-mode"));
-}
 
 function loadFlame(canvas)
 {
