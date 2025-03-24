@@ -1,14 +1,11 @@
 body {
     background-color: #A0B161;
     color: black;
-
     margin: 0px;
   }
-.dark-body
-{
+.dark-body {
     background-color: #702727;
     color: rgb(255, 255, 255);
-
     margin: 0px;
 }
   
@@ -25,20 +22,17 @@ body {
     background-color: #78864B;
     border-radius: 0%;
 }
-#dark-header
-{
+#dark-header {
     color: white;
     overflow: hidden;
     padding: 20px 10px;
     background-color: #000000;
     border-radius: 0%;
 }
-  
 .dark-mode .header a {
     color: white;
 }
-
-.dark-mode footer{
+.dark-mode footer {
     background-color: #7f1700;
 }
 
@@ -53,21 +47,20 @@ body {
     line-height: 25px;
     border-radius: 4px;
 }
+
 /* Float the link section to the right */
 .header-right {
     float: none;
     position: absolute;
     left: 40%;
 }
-
-.dm-toggle{
+.dm-toggle {
 position: fixed;
 top: 15px;
 right: 30px;
-
 z-index: 10;
 }
-.header-right, .dm-toggle{
+.header-right, .dm-toggle {
     border: 0px !important;
     padding: 12px !important;
     font-size: 18px !important;
@@ -79,83 +72,75 @@ z-index: 10;
     background: transparent;
     color: black;
 }
-
-hr{
+hr {
     margin-top: 40px;
     margin-bottom: 0px;
     border-top: 1px solid #000;
 }
-footer{
+footer {
     margin-top: 25px;
     background-color: #3C4F30;
     height: 100px;
 }
-.hidden{
+.hidden {
     display: none;
 }
-
 div{
     border-radius: 25px;
 }
-/*Light mode about page*/
-#about-header-image img{
-    width: 100%;
-    margin-top: 25px;
-}
-#about-timeline{
-    background-color: #506640;
-    width:100%;
-    position: relative;
-    margin-top: 25px;
-}
-#about-timeline #about-wrapper{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    text-align: center;
-}
-#about-wrapper div{
-    margin:10px;
-}
-#about-wrapper p{
-    width: 90%; 
-}
-#about-wrapper img{
-    width: 90%;
-}
-.vertical-line{
-    border-left: 4px solid #3C4F30;
-    height: 90%;
-    position:absolute;
-    left: 50%;
-    margin-left: -2px;
-    top: 5%;
-}
-
 
 /*LightMode Home Page*/
-.image-banner { width: 100%; height: 500px; background: url('images/homepagePhoto.jpg') no-repeat center/cover; border-radius: 0;}
-.intro-text { font-size: 30px;  display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; }
+.image-banner { 
+    width: 100%; 
+    height: 500px; 
+    background: url('images/homepagePhoto.jpg') no-repeat center/cover; 
+    border-radius: 0;
+}
+
+.intro-text { 
+    font-size: 30px;  
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; }
         .intro-text h2 { text-align: center; width: 100%; max-width: 1400px; }
         .intro-text p {width: 100%; max-width: 1400px; }
 
 .arrow { text-align: center; font-size: 30px; padding: 20px; cursor: pointer; }
 
-.content-section { display: flex; align-items: center;
+.content-section { 
+    display: flex; 
+    align-items: center;
     background: #EEE9BF; 
     border-radius: 0; 
     margin: 35px;
-    border: 3px solid rgb(31, 34, 53)}
-.content-section img { padding:0; width: 40%; height: auto; }
-.content-section .text { width: 60%; padding: 20px; font-size: 30px; }
+    border: 3px solid rgb(31, 34, 53)
+}
+
+.content-section img { 
+    padding:0; 
+    width: 40%; 
+    height: auto; 
+}
+
+.content-section .text { 
+    width: 60%; 
+    padding: 20px; 
+    font-size: 30px; 
+}
+
 /*DarkMode Home Page*/
-#para-content-section { display: flex; align-items: center;
+#para-content-section { 
+    display: flex; 
+    align-items: center;
     background: #ff5f5f; 
     border-radius: 0; 
     margin: 35px;
     border: 3px solid rgb(31, 34, 53);
     color: white;
 }
+
 /*particle*/
 #particles-js1 {
     position: fixed;  /* 固定在背景 */
@@ -225,6 +210,7 @@ div{
     grid-row-start: 2;
     grid-row-end: 4;
 }
+
 /* gallery */
 #insta-container{
     display: flex;
@@ -247,11 +233,44 @@ div{
     justify-content: center;
 }
 
-
 .container img{
     width: 250px;
     height: auto;
     margin: 5px;
+}
+
+/*Light mode about page*/
+#about-header-image img{
+    width: 100%;
+    margin-top: 25px;
+}
+#about-timeline{
+    background-color: #506640;
+    width:100%;
+    position: relative;
+    margin-top: 25px;
+}
+#about-timeline #about-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+#about-wrapper div{
+    margin:10px;
+}
+#about-wrapper p{
+    width: 90%; 
+}
+#about-wrapper img{
+    width: 90%;
+}
+.vertical-line{
+    border-left: 4px solid #3C4F30;
+    height: 90%;
+    position:absolute;
+    left: 50%;
+    margin-left: -2px;
+    top: 5%;
 }
 
 /* para-about page css */
@@ -315,4 +334,26 @@ div{
 #para-about-paranormal-sightings .text-box {
     background-color: #40100C;
     color: white;
+}
+
+
+/* para-gallery page css */
+.dark-container{
+    width: 80%;
+    float: center;
+    margin: auto;
+    display: grid;
+    grid-gap: 20px;
+    padding: 20px;
+    border-radius: 5%;
+    background-color: #40100C;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.dark-container img{
+    width: 250px;
+    height: auto;
+    margin: 5px;
 }
