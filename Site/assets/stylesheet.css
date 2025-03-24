@@ -218,6 +218,14 @@ div{
     grid-row-end: 4;
 }
 /* gallery */
+#insta-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#insta-container div{
+    padding: 20px;
+}
 .container{
     width: 80%;
     float: center;
