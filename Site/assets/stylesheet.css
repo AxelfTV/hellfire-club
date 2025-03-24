@@ -34,6 +34,14 @@ body {
     border-radius: 0%;
 }
   
+.dark-mode .header a {
+    color: white;
+}
+
+.dark-mode footer{
+    background-color: #7f1700;
+}
+
 /* Style the header links */
 .header a {
     float: left;
