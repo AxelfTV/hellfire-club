@@ -54,12 +54,14 @@ body {
     position: absolute;
     left: 40%;
 }
+
 .dm-toggle {
 position: fixed;
 top: 15px;
 right: 30px;
 z-index: 10;
 }
+
 .header-right, .dm-toggle {
     border: 0px !important;
     padding: 12px !important;
@@ -72,11 +74,13 @@ z-index: 10;
     background: transparent;
     color: black;
 }
+
 hr {
     margin-top: 40px;
     margin-bottom: 0px;
     border-top: 1px solid #000;
 }
+
 footer {
     margin-top: 25px;
     background-color: #3C4F30;
@@ -117,9 +121,11 @@ footer img {
 .footer-note, .footer-copy {
     margin: 5px 0;
 }
+
 .hidden {
     display: none;
 }
+
 div{
     border-radius: 25px;
 }
@@ -142,7 +148,11 @@ div{
         .intro-text h2 { text-align: center; width: 100%; max-width: 1400px; }
         .intro-text p {width: 100%; max-width: 1400px; }
 
-.arrow { text-align: center; font-size: 30px; padding: 20px; cursor: pointer; }
+.arrow { 
+    text-align: center; 
+    font-size: 30px; padding: 20px; 
+    cursor: pointer; 
+}
 
 .content-section { 
     display: flex; 
@@ -169,7 +179,7 @@ div{
 #para-content-section { 
     display: flex; 
     align-items: center;
-    background: #ff5f5f; 
+    background: #40100C; 
     border-radius: 0; 
     margin: 35px;
     border: 3px solid rgb(31, 34, 53);
@@ -189,31 +199,32 @@ div{
 /*flame*/
 #fireCanvas
 {
-    position: fixed;
+    position: absolute;
     mix-blend-mode: lighten; 
-    bottom: -100px; 
+    bottom: -450px; 
     left: 50%; 
     transform: translateX(-50%); 
     width: 150%; 
-
     max-height: 500px;
     min-width: 1400px;
     min-height: 300px;
-    z-index: 100;
+    pointer-events: none;
+    z-index: -1;
 }
+
 #fireCanvas2
 {
-    position: fixed;
+    position: absolute;
     mix-blend-mode: hard-light; 
-    bottom: -100px; 
+    bottom: -450px; 
     left: 50%; 
     transform: translateX(-50%); 
     width: 150%; 
-
     max-height: 500px;
     min-width: 1400px;
     min-height: 300px;
-    z-index: 100;
+    pointer-events: none;
+    z-index: -1;
 }
 
 

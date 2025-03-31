@@ -6,47 +6,23 @@
     <title>Hellfire Club - Home</title>
 
     <link rel="stylesheet" href="assets/stylesheet.css">
-    <script src="assets/scripts/particles.js"></script>
-    <script src="assets/scripts/darkmode.js"></script>
-    <script src="assets/scripts/homeflame.js"></script>
+    
 </head>
 <body>
 
-  <div id="particles-js1" class="hidden">
-    <canvas id="fireCanvas"></canvas>
-    <canvas id="fireCanvas2"></canvas>
+  <div id="light-header" class="header">
+    <a href="home.html"><img src="assets/images/Hell fire Club Logo.png" alt=""></a>
+    <hr>
+    <div class="header-right">
+      <a class="active" href="home.html">Home</a>
+      <a href="visit.html">Visit</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a class="dm-toggle" href="para-home.html">Toggle</a>
+    </div>
   </div>
 
-    <div id="light-header" class="header">
-        <!-- <a href="home.html" class="logo">Hellfire Club Logo</a> -->
-        <button class="dm-toggle">Toggle</button>
-        <a href="home.html "><img src="assets/images/Hell fire Club Logo.png" alt=""></a>
-        <hr>
-        <div class="header-right">   
-         
-          <a class="active" href="home.html">Home</a>
-          <a href="visit.html">Visit</a>
-          <a href="about.html">About</a>
-          <a href="gallery.html">Gallery</a>
-          <!-- <button class="dm-toggle">Toggle</button> -->
-        </div>        
-    </div>
-    <div id="dark-header" class="header hidden">
-        <!-- <a href="home.html" class="logo">Hellfire Club Logo</a> -->
-        <button class="dm-toggle">Toggle</button>
-        <a href="home.html "><img src="assets/images/HellfireDarkModeLogo.png" alt="Hellfire Club Logo"></a>
-        <hr>
-        <div class="header-right">   
-         
-          <a class="active" href="home.html">Home</a>
-          <a href="para-visit.html">Visit</a>
-          <a href="para-about.html">About</a>
-          <a href="para-gallery.html">Gallery</a>
-          <!-- <button class="dm-toggle">Toggle</button> -->
-        </div>        
-    </div>
-    <div class="image-banner">
-    </div>
+    <div class="image-banner"></div>
 
     <div class="intro-text">
       <h2>Welcome to the Hellfire Club Website</h2>
@@ -60,18 +36,26 @@
     <div class="arrow" onclick="scrollToContent()">⬇</div>
 
     <div id="content">
+     <a href="visit.html">
       <div class="content-section">
           <img src="assets/images/homepagePhoto.jpg" alt="">
           <div class="text">Visitor information opening hours, accessibility etc.</div>
       </div>
+     </a>
+      
+     <a href="about.html">
       <div class="content-section">
           <img src="assets/images/homepagePhoto.jpg" alt="">
           <div class="text">History of the site, archaeologists say...</div>
       </div>
+     </a>
+
+     <a href="gallery.html">
       <div class="content-section">
           <img src="assets/images/homepagePhoto.jpg" alt="">
           <div class="text">Check out the exciting hiking trails around the Hell Fire Club.</div>
       </div>
+    </a>
   </div>
 
   <script>
