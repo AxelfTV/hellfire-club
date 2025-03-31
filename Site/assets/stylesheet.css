@@ -175,6 +175,17 @@ div{
     font-size: 30px; 
 }
 
+#content a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  #content a:hover .content-section {
+    transform: scale(1.01);
+    transition: transform 0.2s ease;
+  }
+
 /*DarkMode Home Page*/
 #para-content-section { 
     display: flex; 
