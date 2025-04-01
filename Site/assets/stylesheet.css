@@ -37,6 +37,11 @@ body {
 }
 
 /* Style the header links */
+
+a.active {
+   text-decoration: underline !important;
+}
+
 .header a {
     float: left;
     color: black;
@@ -199,12 +204,12 @@ div{
 
 /*particle*/
 #particles-js1 {
-    position: fixed;  /* 固定在背景 */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: -1; /* 确保它在所有内容的下方 */
+    z-index: -1; 
 }
     
 /*flame*/
@@ -215,7 +220,7 @@ div{
     bottom: -450px; 
     left: 50%; 
     transform: translateX(-50%); 
-    width: 150%; 
+    /* width: 150%;  */
     max-height: 500px;
     min-width: 1400px;
     min-height: 300px;
@@ -230,7 +235,7 @@ div{
     bottom: -450px; 
     left: 50%; 
     transform: translateX(-50%); 
-    width: 150%; 
+    /* width: 150%;  */
     max-height: 500px;
     min-width: 1400px;
     min-height: 300px;
@@ -281,11 +286,11 @@ div{
     object-fit: cover; 
 }
 
-.visit-larger-box {
-    grid-row: 2 / 4;
+/* .visit-larger-box {
+    grid-row: 1 / 4;
     overflow-y: auto; 
 }
-
+ */
 
 
 /* gallery */
