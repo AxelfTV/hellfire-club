@@ -306,7 +306,7 @@ div{
     padding: 20px;
     border-radius: 5%;
     background-color: #BDB77C;
-    align-items: start; /* Prevents uneven stretching */
+    align-items: start;
 }
 
 .gallery-item {
@@ -314,7 +314,7 @@ div{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 100%; /* Ensures items fit in grid */
+    max-width: 100%; 
 }
 
 .gallery-image {
@@ -463,7 +463,7 @@ div{
     padding: 20px;
     border-radius: 5%;
     background-color: #40100C;
-    align-items: start; /* Prevents uneven stretching */
+    align-items: start;
 }
 .dark-gallery-caption {
     margin-top: 8px;
