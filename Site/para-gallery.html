@@ -6,6 +6,8 @@
     <title>Hellfire Club - Gallery</title>
 
     <link rel="stylesheet" href="assets/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script>
         window.addEventListener('DOMContentLoaded', () => {
             window.localStorage.setItem("dark-mode", 1);
@@ -15,6 +17,9 @@
 <body class="dark-mode">
     <div id="dark-header" class="header">
         <a href="home.html"><img src="assets/images/HellfireDarkModeLogo.png" alt="Hellfire Club Logo"></a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+          </a>  
         <hr>
         <div class="header-right">
             <a href="para-home.html">Home</a>
@@ -93,5 +98,15 @@
           <p class="footer-copy">&copy; 2025 HellFire Club. All rights reserved.</p> 
         </div>
       </footer>
+      <script>
+        function toggleMenu() {
+          var x = document.getElementById("light-header") || document.getElementById("dark-header");
+          if (x.className.includes("responsive")) {
+            x.className = x.className.replace(" responsive", "");
+          } else {
+            x.className += " responsive";
+          }
+        }
+        </script>
 </body>
 </html>

@@ -6,6 +6,8 @@
     <title>Hellfire Club - Gallery</title>
 
     <link rel="stylesheet" href="assets/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script>
         window.addEventListener('DOMContentLoaded', () => {
             window.localStorage.setItem("dark-mode", 0);
@@ -16,6 +18,9 @@
     <div id="light-header" class="header">
         <button class="dm-toggle">Toggle</button>
         <a href="home.html "><img src="assets/images/Hell fire Club Logo.png" alt=""></a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+          </a>  
         <hr>
         <div class="header-right">
           <a href="home.html">Home</a>
@@ -107,5 +112,15 @@
       </footer>
     <script async src="//www.instagram.com/embed.js"></script>
     <script async src="//www.instagram.com/embed.js"></script>
+    <script>
+        function toggleMenu() {
+          var x = document.getElementById("light-header") || document.getElementById("dark-header");
+          if (x.className.includes("responsive")) {
+            x.className = x.className.replace(" responsive", "");
+          } else {
+            x.className += " responsive";
+          }
+        }
+        </script>
 </body>
 </html>
