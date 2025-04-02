@@ -371,6 +371,7 @@ div{
     font-size: 14px;
     color: #666;
 }
+
 /*Light mode about page*/
 #about-header-image img{
     width: 100%;
@@ -405,6 +406,43 @@ div{
     top: 5%;
 }
 
+
+@media screen and (max-width: 768px) {
+    #about-timeline {
+        overflow: hidden; 
+        padding: 10px; 
+        box-sizing: border-box;
+    }
+
+    #about-timeline #about-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+    }
+
+
+    #about-wrapper img {
+        width: 100%; 
+        max-width: 500px;
+        height: auto; 
+        object-fit: contain; 
+        display: block;
+        margin: 10px auto; 
+    }
+
+
+    #about-wrapper div {
+        width: 95%;
+        max-width: 600px; 
+        margin: 10px auto; 
+    }
+
+    .vertical-line {
+        display: none;
+    }
+}
+
 /* para visit */
 #para-visit-wrapper {
     display: grid;
@@ -430,6 +468,30 @@ div{
     margin: 0;
     word-wrap: break-word; 
     overflow-wrap: anywhere;
+}
+
+@media screen and (max-width: 768px) {
+    #para-visit-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; 
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    #para-visit-wrapper > div {
+        width: 100%;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    #map {
+        order: -1; 
+        width: 100%;
+        max-width: 95%; 
+        margin: 0 auto;
+    }
+    #map img {
+        height: auto;
+    }
 }
 
 /* para-about page css */
