@@ -300,6 +300,30 @@ div{
     object-fit: cover; 
 }
 
+@media screen and (max-width: 768px) {
+    #visit-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; 
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    #visit-wrapper > div {
+        width: 100%;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    #map {
+        order: -1; 
+        width: 100%;
+        max-width: 95%; 
+        margin: 0 auto;
+    }
+    #map img {
+        height: auto;
+    }
+}
+
 /* .visit-larger-box {
     grid-row: 1 / 4;
     overflow-y: auto; 
