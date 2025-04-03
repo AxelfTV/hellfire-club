@@ -390,12 +390,20 @@ div{
 }
 #about-wrapper div{
     margin:10px;
+    margin-bottom: 20px;
 }
 #about-wrapper p{
     width: 90%; 
 }
+#about-wrapper h1{
+    width: 90%; 
+}
 #about-wrapper img{
-    width: 90%;
+    object-fit: cover;
+    width: 500px;
+    height: 300px;
+    padding: 0;
+    margin-top: 20px;
 }
 .vertical-line{
     border-left: 4px solid #3C4F30;
@@ -405,7 +413,6 @@ div{
     margin-left: -2px;
     top: 5%;
 }
-
 
 @media screen and (max-width: 768px) {
     #about-timeline {
@@ -424,17 +431,17 @@ div{
 
     #about-wrapper img {
         width: 100%; 
-        max-width: 500px;
-        height: auto; 
-        object-fit: contain; 
+        width: 350px;
+        height: 300px;
+        object-fit: cover;
         display: block;
         margin: 10px auto; 
     }
 
 
     #about-wrapper div {
-        width: 95%;
-        max-width: 600px; 
+        width: 100%;
+        max-width: 350px; 
         margin: 10px auto; 
     }
 
@@ -516,13 +523,13 @@ div{
     padding-bottom: 20px;
 }
 .content-wrapper img {
-    width: 48%;
-    max-width: none;
-    height: auto;
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
     border-radius: 15px;
 }
 .text-box {
-    width: 45%;
+    width: 40%;
     max-width: none;
     padding: 20px;
     border-radius: 15px;
