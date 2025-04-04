@@ -413,6 +413,7 @@ div{
     height: 300px;
     padding: 0;
     margin-top: 20px;
+    border-radius: 5%;
 }
 .vertical-line{
     border-left: 4px solid #3C4F30;
@@ -438,7 +439,6 @@ div{
         text-align: center;
     }
 
-
     #about-wrapper img {
         width: 100%; 
         width: 350px;
@@ -446,8 +446,8 @@ div{
         object-fit: cover;
         display: block;
         margin: 10px auto; 
+        border-radius: 5%;
     }
-
 
     #about-wrapper div {
         width: 100%;
@@ -458,6 +458,16 @@ div{
     .vertical-line {
         display: none;
     }
+
+    /* --- Reordering elements in mobile --- */
+    #about-wrapper > div:nth-child(1) { order: 1; }  /* homepagePhoto.jpg */
+    #about-wrapper > div:nth-child(2) { order: 2; }  /* Construction text */
+    #about-wrapper > div:nth-child(4) { order: 3; }  /* dark/image2.png */
+    #about-wrapper > div:nth-child(3) { order: 4; }  /* Hellfire Club text */
+    #about-wrapper > div:nth-child(5) { order: 5; }  /* light/image2.jpg */
+    #about-wrapper > div:nth-child(6) { order: 6; }  /* Fire & Abandonment text */
+    #about-wrapper > div:nth-child(8) { order: 7; }  /* dark/image1.png */
+    #about-wrapper > div:nth-child(7) { order: 8; }  /* Ghost Stories text */
 }
 
 /* para visit */
