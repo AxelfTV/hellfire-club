@@ -543,9 +543,9 @@ div{
     padding-bottom: 20px;
 }
 .content-wrapper img {
-    width: 48%;
-    max-width: none;
-    height: auto;
+    width: 500px;
+    height:300px;
+    object-fit: cover;
     border-radius: 15px;
 }
 .text-box {
