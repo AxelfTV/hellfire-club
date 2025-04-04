@@ -407,6 +407,7 @@ div{
 }
 
 
+
 @media screen and (max-width: 768px) {
     #about-timeline {
         overflow: hidden; 
@@ -516,7 +517,8 @@ div{
     padding-bottom: 20px;
 }
 .content-wrapper img {
-    width: 48%;
+    display: flex;
+    width: 20%;
     max-width: none;
     height: auto;
     border-radius: 15px;
@@ -529,6 +531,25 @@ div{
     text-align: center;
     font-size: 1.2em;
 }
+
+@media screen and (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .content-wrapper img {
+        width: 80%;
+        max-width: 100%;
+    }
+    .text-box {
+        width: 90%;
+        max-width: 100%;
+    }
+    
+}
+
+
 
 #para-about-satanic-rituals {
     background-color: black;
@@ -556,6 +577,11 @@ div{
     background-color: #40100C;
     color: white;
 }
+#para-about-col img
+{
+    width:50px;
+
+} 
 
 
 /* para-gallery page css */
